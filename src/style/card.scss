@@ -1,0 +1,9 @@
+.border-rad {
+	border-radius: 4px;
+}
+
+.card {
+	@extend .border-rad;
+	border: 1px solid black;
+	padding: 10px;
+}

@@ -1,14 +1,21 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
 
-export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
+const store = createStore({
+	state: {
+		isLogged: false,
+	},
+	getters: {},
+	mutations: {
+		login(state) {
+			state.isLogged = true;
+		},
+
+		logout(state) {
+			state.isLogged = false;
+		},
+	},
+	actions: {},
+	modules: {},
+});
+
+export default store;

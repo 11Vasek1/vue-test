@@ -1,0 +1,44 @@
+%abstract {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
+	text-align: left;
+}
+
+%title {
+	@extend %abstract;
+	line-height: 130%;
+	font-weight: bold;
+}
+
+%text {
+	@extend %abstract;
+	line-height: 150%;
+}
+
+.h1 {
+	@extend %title;
+	font-size: 36px;
+}
+
+.h2 {
+	@extend %title;
+	font-size: 30px;
+}
+
+.h3 {
+	@extend %title;
+	font-size: 24px;
+}
+
+.h4 {
+	@extend %title;
+	font-size: 18px;
+}
+
+.text {
+	@extend %text;
+	font-size: 16px;
+}

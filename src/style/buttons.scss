@@ -1,0 +1,17 @@
+@import 'card.scss';
+.button {
+	@extend .border-rad;
+	cursor: pointer;
+
+	transition: all 0.3s ease-in-out;
+
+	padding: 8px 16px;
+	border: 1px solid black;
+	background-color: white;
+	color: black;
+
+	&:hover {
+		color: white;
+		background-color: black;
+	}
+}
